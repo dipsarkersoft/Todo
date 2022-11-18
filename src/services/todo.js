@@ -21,7 +21,7 @@ exports.todoUpdateServices=async(id,todoListData)=>{
 
 exports.todoStatusUpdateServices=async(id,todoStatus)=>{
 
-    return await todo.updateOne({id},{$set:todoStatus})
+    return await todo.updateOne({id},{$set:todoStatus},{runValidators:true})
 }
 
 
