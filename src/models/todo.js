@@ -4,13 +4,13 @@ const todoSchema=mongoose.Schema({
      username:String,
      TodoSubject:String,
      TodoDescription:String,
-     TodoStatus:{type: String,
+     TodoStatus:{
+          type: String,
           default:"new",
-
-             enum:{
-            values:["verified","new"]
+          enum:["verified","new"]
+            
                
-     }}
+     }
      
 },{timestamps:true,versionKey:false})
 

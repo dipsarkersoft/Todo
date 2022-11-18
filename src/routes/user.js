@@ -15,5 +15,4 @@ router.post("/deleteuser",veryfyToken,deleteUser)
 
 
 
-
 module.exports=router
